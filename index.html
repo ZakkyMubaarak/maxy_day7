@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7 | Set Alarm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Alarm Title -->
+        <h1 class="text-center">Alarm Clock</h1>
+
+        <!-- Alarm Settings -->
+        <div class="alarm-settings text-center">
+            <label for="alarmTime">Set Alarm Time:</label>
+            <input type="time" id="alarmTime" required>
+            <button id="setAlarmButton">Set Alarm</button>
+        </div>
+
+        <!-- Display Alarm Set Time and Countdown -->
+        <div class="alarm-info">
+            <div class="container text-center mt-1">
+                <p>Alarm Set On: <span id="alarm" class="fw-bold text-danger"></span></p>
+            </div>
+            <div class="container text-center">
+                <p>Time Remaining: <span id="countdown" class="fw-bold"></span></p>
+            </div>
+        </div>
+
+        <!-- Alarm Message -->
+        <div class="alarm-message text-center" id="alarmMessage"></div>
+
+        <!-- Audio Element for Alarm Sound -->
+        <audio id="alarmSound">
+            <source src="img/alarm.mp3" type="audio/mpeg" preload="auto">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
